@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <MS_x0020_SQL Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>MS SQL</Alias>
+        <ConnectionStringEncrypted>9NjdSGIOQ91gSaWYe0kiP9FuaStFWbtt4njoNG+4ImP0WuHJ50pDvEZ7sdzwhPVjhmB3KMYYabz9Sf1s4Q1iZ9xw+81McZLFcE3tveFM4WLfVH9jZ0zzRXETzQTJPWIqxFjRaGdrAe3hTaE=</ConnectionStringEncrypted>
+        <Name>MS SQL</Name>
+      </MS_x0020_SQL>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <GetStockInventory Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>GetStockInventory</Alias>
+        <Columns isList="true" count="5">
+          <value>Stock,System.Int32</value>
+          <value>Name,System.String</value>
+          <value>GoodsID,System.Int32</value>
+          <value>InventoryID,System.String</value>
+          <value>InventoryTitle,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>74f30e417dba427a8d68e3dcdaddc787</Key>
+        <Name>GetStockInventory</Name>
+        <NameInSource>MS SQL</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_InventoryID,InventoryID,8,0</value>
+        </Parameters>
+        <SqlCommand>GetStockInventory</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </GetStockInventory>
+      <DateNow Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>DateNew</Alias>
+        <Columns isList="true" count="1">
+          <value>DateToday,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>1a38af00c72e49acb32570e68268cee9</Key>
+        <Name>DateNow</Name>
+        <NameInSource>MS SQL</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>SELECT FORMAT(GETDATE(), 'yyyy/MM/dd','fa') As DateToday</SqlCommand>
+      </DateNow>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="3">
+      <value>,inventoryCode,inventoryCode,,System.String,,False,False,False,False</value>
+      <value>,InventoryTitle,InventoryTitle,,System.String,,False,False,False,False</value>
+      <value>,InventoryID,InventoryID,,System.Nullable`1[System.Int32],,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>3d59ab569d424bd38d10059299e1a806</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.7,1.4</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>0,0,7.72,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,16</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>گزارش موجودی انبار </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text6 Ref="8" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,0.8,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{DateNow.DateToday}</Text>
+              <TextBrush>DarkGray</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text5 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.9,0.8,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>: تاریخ صدور </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <HorizontalLinePrimitive1 Ref="10" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.2,7.7,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="11" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <StartCap Ref="12" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="13" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.6,7.7,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="14" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>5919e3f6a092405289ecf13d5c9ee897</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <StartCap Ref="15" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <HeaderBand1 Ref="16" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,7.7,0.3</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text8 Ref="17" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>5.3,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,11</Font>
+              <Guid>2395982bf71e49d08bf9a512bd5bbb07</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="16" />
+              <Text>ردیف </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="18" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>3.3,0,2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,11</Font>
+              <Guid>e3ecaa2dde564e43ade2e41d56a3584a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="5" />
+              <Parent isRef="16" />
+              <Text>نام کالا</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="19" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>1.8,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,11</Font>
+              <Guid>3be5270d224344369c01300d15a3ec6a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="16" />
+              <Text>موجودی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </HeaderBand1>
+        <GroupHeaderBand1 Ref="20" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.7,7.7,0.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text7 Ref="21" type="Text" isKey="true">
+              <Brush>[34:59:201]</Brush>
+              <ClientRectangle>1.8,0,3.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,14</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{GetStockInventory.InventoryTitle}</Text>
+              <TextBrush>DarkGray</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text4 Ref="22" type="Text" isKey="true">
+              <Brush>[34:59:201]</Brush>
+              <ClientRectangle>4.9,0,1.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,14</Font>
+              <Guid>20330a5481434d9e877268a67b9a01a6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>: عنوان انبار </Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+          </Components>
+          <Condition>{GetStockInventory.InventoryID}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </GroupHeaderBand1>
+        <DataBand1 Ref="23" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.5,7.7,0.3</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text11 Ref="24" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:0:0:0]</Brush>
+              <ClientRectangle>5.3,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,11</Font>
+              <Guid>f53191cae15543c795096fe65dbbd34b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:0:0:0]</Brush>
+              <ClientRectangle>3.3,0,2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,11</Font>
+              <Guid>9c8864f7141c4b2b97e93dfc297b2253</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{GetStockInventory.Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:0:0:0]</Brush>
+              <ClientRectangle>1.8,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,11</Font>
+              <Guid>f44ccac2526a4c5daa67c8b41c6fdbed</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="23" />
+              <Text>{GetStockInventory.Stock}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>GetStockInventory</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>07b6098ed84b4e00b3dac7109287a7f3</Guid>
+      <Margins>0.4,0.4,0.4,0.4</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/4/2021 5:04:26 PM</ReportChanged>
+  <ReportCreated>8/17/2021 10:40:27 AM</ReportCreated>
+  <ReportFile>D:\Project\Phone_Test_New\PhoneTest\Inventory\Inventory\bin\Debug\Report\StockInventoryReport.mrt</ReportFile>
+  <ReportGuid>2fbc20bda5bf4abfa2c194f1d389f764</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2019.4.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

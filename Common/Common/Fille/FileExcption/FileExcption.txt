@@ -1,0 +1,81 @@
+﻿.Net SqlClient Data Provider  Procedure or function 'UpdateCurrentUser' expects parameter '@ValidationResutlt', which was not supplied.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Procedure or function 'UpdateCurrentUser' expects parameter '@ValidationResutlt', which was not supplied.
+10/9/2021 3:22:53 PM:.Net SqlClient Data Provider||Procedure or function 'UpdateCurrentUser' expects parameter '@ValidationResutlt', which was not supplied.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'CACTUS\Ahmadi'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/10/2021 11:01:03 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/10/2021 11:01:03 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/10/2021 11:01:03 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:21:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:21:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:24:02 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:02 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:02 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:02 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:02 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:03 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:03 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+10/13/2021 2:24:03 PM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'asa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 2:27:49 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:37:49 PM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+10/13/2021 5:37:49 PM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+10/13/2021 5:37:49 PM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+10/13/2021 5:37:49 PM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'ASa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:47 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:47 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:47 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:47 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:47 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:48 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+10/13/2021 5:38:48 PM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.
+1/1/2000 12:00:00 AM:.Net SqlClient Data Provider||Login failed for user 'sa'.

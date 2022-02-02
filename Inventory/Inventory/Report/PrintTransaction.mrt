@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <MS_x0020_SQL Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>MS SQL</Alias>
+        <ConnectionStringEncrypted>9Hr7SN0JktnzSYTce5z2J9HEzWhhXdPVYhXoeOoRIhPVbPvr5ko67Wtc/VBnhKIT1wzZiUVRUa1yWqwE6oSkZ/lw1cvFV1FtRUm93HIAsWKNavXDXl2SpGdJqBROFKQbkPL/I0ZZew==</ConnectionStringEncrypted>
+        <Name>MS SQL</Name>
+      </MS_x0020_SQL>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <GettransactionDetaileReport Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>GettransactionDetaileReport</Alias>
+        <Columns isList="true" count="14">
+          <value>Number,System.String</value>
+          <value>TransactionDate,System.DateTime</value>
+          <value>TransactionType,System.String</value>
+          <value>Inventory,System.String</value>
+          <value>InventoryCode,System.String</value>
+          <value>CustomerName,System.String</value>
+          <value>CustomerCode,System.String</value>
+          <value>NationalCode,System.String</value>
+          <value>GoodsName,System.String</value>
+          <value>GoodsUnite,System.String</value>
+          <value>NumberOfGoods,System.Int32</value>
+          <value>Price,System.Int64</value>
+          <value>TotalPrice,System.Int64</value>
+          <value>DateShamsi,System.DateTime</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>430489bb9cbb45fc82ffc12384cecebf</Key>
+        <Name>GettransactionDetaileReport</Name>
+        <NameInSource>MS SQL</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_TransactionID,TransactionID,8,0</value>
+        </Parameters>
+        <SqlCommand>GettransactionDetaileReport</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </GettransactionDetaileReport>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="1">
+      <value>,TransactionID,TransactionID,,System.Int32,_x0039_,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>7ee9f30377534a33a2f6459da3027dbf</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand2 Ref="5" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,3</ClientRectangle>
+          <Components isList="true" count="16">
+            <Text29 Ref="6" type="Text" isKey="true">
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>0,0,7.69,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Editable>True</Editable>
+              <Font>CactusTahoma,18</Font>
+              <Guid>328c4af9dd3947ccb47c098a8e8d8f03</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>اطلاعات  سند</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text30 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,0.5,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>9e8b115f26e54473a764bc4d0fb13321</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.Number}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text34 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.1,0.5,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,12</Font>
+              <Guid>720aa96090a54020b5e279d6d85f6c0c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text> : تاریخ صدور 
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text35 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.5,0.5,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,11</Font>
+              <Guid>a16ae15d7c87458cb6d284300b475214</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>شماره سفارش </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text36 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>20f1184f6a284841bb4566c6225b898e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.TransactionType}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.5,1,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>575f0e8d573f4244b22144035c468942</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>نوع سند </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text38 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,1.9,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>94b02b4d4e724e109e35e3b4092a21ac</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.CustomerCode}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+            <Text39 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.3,2.5,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>ec4a4ee1faaf4dfd9b81a131b57bd133</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.NationalCode}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+            <Text40 Ref="14" type="Text" isKey="true">
+              <Border>None;[155:155:155];1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>5.3,1.4,2.39,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Editable>True</Editable>
+              <Font>CactusTahoma,18</Font>
+              <Guid>fe6601c3906d41bf8041f5b3f36d7ba2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>مشتری</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+            <Text41 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.7,0.5,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>d634b554c0324af6a33eae553c24d315</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>شماره انبار</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text42 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.7,1,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>00bc1a3c71494b6cadfe36eec665fc75</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>عنوان انبار </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text43 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,1,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>ab6d2f5571ed46dcb572d1c0cee9b723</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.Inventory}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text43>
+            <Text44 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,0.5,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>627b14896c7e4cee9c438dcf029cd7a1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.InventoryCode}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text44>
+            <Text45 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,2.2,1.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>8bf398c51b894603ac5273943699c8ec</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.CustomerName}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Text2 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,0.5,1,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,10</Font>
+              <Guid>ea48bcd6cca14664b73446a94787b22b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{GettransactionDetaileReport.DateShamsi}</Text>
+              <TextBrush>[127:127:127]</TextBrush>
+              <TextFormat Ref="21" type="CustomFormat" isKey="true">
+                <StringFormat>yyyy/MM/dd</StringFormat>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <HorizontalLinePrimitive2 Ref="22" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,2.8,7.7,0.01</ClientRectangle>
+              <Color>0, 176, 240</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="23" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>99e23cfe9de5475086dbde016d75f9bf</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <StartCap Ref="24" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>DashDot</Style>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>872f9cfe91cd45acac456779eba040f6</Guid>
+          <Linked>True</Linked>
+          <Name>PageHeaderBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand2>
+        <HeaderBand1 Ref="25" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.6,7.72,0.4</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text15 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>7.2,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="25" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text17 Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>5.8,0,1.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>25ef312ce21b483daa89bafe2c5c2513</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="25" />
+              <Text>نام  کالا</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>5.2,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>b66fc161f65f45d4a1a7584ca7418ce7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="25" />
+              <Text>تعداد</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>3.9,0,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>b792a9bef757487d9c6e0d8f0403e327</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="25" />
+              <Text>نوع واحد </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>2.4,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>4dc56a99d2074d12989eb651d224918b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="25" />
+              <Text>فی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="31" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>0,0,2.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>8b8a1edbce5045fbb17e1816fd235c06</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="25" />
+              <Text>جمع کل </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBand1>
+        <DataBand1 Ref="32" type="DataBand" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4.4,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text22 Ref="33" type="Text" isKey="true">
+              <Border>Left;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>7.2,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>1f52fa120a244ed89ce86f2c9d6dbc7d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text23 Ref="34" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>5.8,0,1.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>cf5011430bcf4f658a7d974316c834d2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>{GettransactionDetaileReport.GoodsName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="35" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>5.2,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>ff0c48f2ba70445b9e716d9bba1d0407</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>{GettransactionDetaileReport.NumberOfGoods}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="36" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>3.9,0,1.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>dc441b89f0254096a7d09443e71c9518</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>{GettransactionDetaileReport.GoodsUnite}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="37" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>2.4,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>5cb95ff86a8841b1b3e5b32d0ef41397</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>{GettransactionDetaileReport.Price}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="38" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="39" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,0,2.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>3fed345aa28d48948bc5ef57c0eaf542</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>{GettransactionDetaileReport.TotalPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="40" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>GettransactionDetaileReport</DataSourceName>
+          <EvenStyle>Style1</EvenStyle>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <FooterBand1 Ref="41" type="FooterBand" isKey="true">
+          <Border>None;[0:176:240];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.1,7.72,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text10 Ref="42" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>6.5,0.1,1.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>18dd8c1acf7447d1ab9dec71f36e302a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="41" />
+              <Text>توضیحات</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text31 Ref="43" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Solid;False;4;Black</Border>
+              <Brush>[0:176:240]</Brush>
+              <ClientRectangle>2.4,0.1,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>f1537f1fd5144c4cb2be9ebd5a5d1c49</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="4" />
+              <Parent isRef="41" />
+              <Text>جمع  کل  </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="44" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,2.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,12</Font>
+              <Guid>49aad1dcf8894cf29d76c44fc08657e1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="4" />
+              <Parent isRef="41" />
+              <Text>{Sum(DataBand1,GettransactionDetaileReport.TotalPrice)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="45" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits, DecimalSeparator</State>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text28 Ref="46" type="Text" isKey="true">
+              <Border>All;[0:176:240];1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,0.1,2.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>CactusTahoma,14</Font>
+              <Guid>a090a0c9022f4e5d9807140ac8ec706b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="4" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </FooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>59715848a49245e5aa5aea0530bb161f</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/10/2021 4:32:41 PM</ReportChanged>
+  <ReportCreated>8/4/2021 5:14:39 PM</ReportCreated>
+  <ReportFile>D:\Project\Phone_Test_New\PhoneTest\Inventory\Inventory\bin\Debug\Report\PrintTransaction.mrt</ReportFile>
+  <ReportGuid>4362e814f5114baeb4e28efcdab8d23e</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2019.4.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="47" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;Black;1;Solid;False;4;Black</Border>
+      <Brush>LightGray</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Style1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>

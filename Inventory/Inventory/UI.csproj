@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48E84E46-9E11-4A97-BE31-B67235FE408C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cactus.Inventory.UI</RootNamespace>
+    <AssemblyName>Cactus.Inventory.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.ButtonBar.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.CalendarCombo.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Common.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.ExplorerBar.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.FilterEditor.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.Ribbon.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.Schedule.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.TimeLine.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.UI.v4, Version=4.0.52.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Stimulsoft.Base, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Client.Designer, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Client.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard.Viewer, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Dashboard.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard.Viewer.Wpf, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Dashboard.Viewer.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Report.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WpfDesign, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2019.4.2\Designers\.NET\Stimulsoft.Report.WpfDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.11.10\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.11.10\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControls\Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TextBoxRounded.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_Cardex_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_Cardex_Report.Designer.cs">
+      <DependentUpon>UC_Cardex_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UC_Stock_Inventory_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UC_Stock_Inventory_Report.Designer.cs">
+      <DependentUpon>UC_Stock_Inventory_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventorysSubSystem.cs" />
+    <Compile Include="Report\DetailsReports.cs" />
+    <Compile Include="Report\Report.cs" />
+    <Compile Include="Resources\Common_Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common_Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\User_Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User_Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Inventory_Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Inventory_Main.Designer.cs">
+      <DependentUpon>UC_Inventory_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Report.Designer.cs">
+      <DependentUpon>UC_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Form_Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form_Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Goods_Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Goods_Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Inventory_Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventory_Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Transaction_Res1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transaction_Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Goods_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Goods_List.Designer.cs">
+      <DependentUpon>UC_Goods_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_InsertCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_InsertCategory.Designer.cs">
+      <DependentUpon>UC_InsertCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Insert_Update_Goods.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Insert_Update_Goods.Designer.cs">
+      <DependentUpon>UC_Insert_Update_Goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Insert_Update_Inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Insert_Update_Inventory.Designer.cs">
+      <DependentUpon>UC_Insert_Update_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Inventory_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Inventory_List.Designer.cs">
+      <DependentUpon>UC_Inventory_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Stock_Inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Stock_Inventory.Designer.cs">
+      <DependentUpon>UC_Stock_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Transaction_Insert_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Transaction_Insert_Update.Designer.cs">
+      <DependentUpon>UC_Transaction_Insert_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Transaction_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Transaction_List.Designer.cs">
+      <DependentUpon>UC_Transaction_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\Bootstrapper.cs" />
+    <EmbeddedResource Include="CustomControls\UC_Cardex_Report.resx">
+      <DependentUpon>UC_Cardex_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UC_Stock_Inventory_Report.resx">
+      <DependentUpon>UC_Stock_Inventory_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Common_Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Common_Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\User_Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>User_Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Inventory_Main.resx">
+      <DependentUpon>UC_Inventory_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Report.resx">
+      <DependentUpon>UC_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\Form_Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form_Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Goods_Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Goods_Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Inventory_Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Inventory_Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Transaction_Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Transaction_Res1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Goods_List.resx">
+      <DependentUpon>UC_Goods_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_InsertCategory.resx">
+      <DependentUpon>UC_InsertCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Insert_Update_Goods.resx">
+      <DependentUpon>UC_Insert_Update_Goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Insert_Update_Inventory.resx">
+      <DependentUpon>UC_Insert_Update_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Inventory_List.resx">
+      <DependentUpon>UC_Inventory_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Stock_Inventory.resx">
+      <DependentUpon>UC_Stock_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Transaction_Insert_Update.resx">
+      <DependentUpon>UC_Transaction_Insert_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Transaction_List.resx">
+      <DependentUpon>UC_Transaction_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common\Common.csproj">
+      <Project>{4f16baef-9495-4ccf-87e4-fcc6f88254c7}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{8cc7cb08-b8f7-4f8a-8061-2554bc75c4b7}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Model.csproj">
+      <Project>{e13c1346-aab4-488f-80ae-bc443190d3b3}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\Cardex.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Report\PrintTransaction.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Report\StockInventoryReport.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Pin.png" />
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Book-Address-Book-Mac %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconAddCustomer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconAddInventory.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconEditCustomer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconEditGoods .ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconEditInventory.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconEditTransaction.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconGoods.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconNewCustomer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconNewGoods.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconNewInventory.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconNewTransaction.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconTranaction.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconInventory.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconReport.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconCustomer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconTag.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

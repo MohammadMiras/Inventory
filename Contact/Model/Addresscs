@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static objli.ModelUtility;
+
+namespace objli
+{
+    public class Addres
+    {
+        #region Methods
+
+        #region Constructors
+        public Addres()
+        {
+            this.Status = RecordStstusEnum.Fix;
+        }  
+        #endregion
+
+        #endregion
+
+        #region Property
+
+        #region  Addres ID
+
+        public int ID { get; set; }
+
+        #endregion
+
+        #region Addres Title
+
+        public string AddresTitle { get; set; }
+
+        #endregion
+
+        #region Addres Type 
+
+        public string AddresType { get; set; }
+
+        #endregion
+
+        #region Record Status
+
+        public RecordStstusEnum Status { get; set; }  
+
+        #endregion
+
+        #endregion
+
+
+    }
+}

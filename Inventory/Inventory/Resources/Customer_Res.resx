@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AreYouDeleteCustomer" xml:space="preserve">
+    <value>آیا اطمینان دارید از حذف مشتری؟</value>
+  </data>
+  <data name="CaptionDeleteCustomer" xml:space="preserve">
+    <value>حذف مشتری</value>
+  </data>
+  <data name="CaptionEmptyFields" xml:space="preserve">
+    <value>خالی بودن مقادیر  </value>
+  </data>
+  <data name="ComboboxDefaultValue" xml:space="preserve">
+    <value>--انتخاب کنید--</value>
+  </data>
+  <data name="ConversionCustomerCode" xml:space="preserve">
+    <value>کد شخص  نباید تغییر کند </value>
+  </data>
+  <data name="DeletedCustomer" xml:space="preserve">
+    <value>مشتری با موفقیت حذف گردید </value>
+  </data>
+  <data name="DuplicateContactCode" xml:space="preserve">
+    <value>کد وارد شد تکراری می باشد </value>
+  </data>
+  <data name="EditGrid" xml:space="preserve">
+    <value>جدول اماده ویرایش هست </value>
+  </data>
+  <data name="EnterContactCode" xml:space="preserve">
+    <value>لطفا یک کد شخص وارد کنید</value>
+  </data>
+  <data name="EnterFatherName" xml:space="preserve">
+    <value>لطفا یک نام پدر وارد کنید </value>
+  </data>
+  <data name="EnterFristName" xml:space="preserve">
+    <value>لطفا یک نام  وارد کنید</value>
+  </data>
+  <data name="EnterLastName" xml:space="preserve">
+    <value>لطفا یک نام خانوادگی وارد کنید </value>
+  </data>
+  <data name="EnterNationalCode" xml:space="preserve">
+    <value>لطفا یک کد ملی وارد کنید </value>
+  </data>
+  <data name="FormContactListTitle" xml:space="preserve">
+    <value>مشتری</value>
+  </data>
+  <data name="FormInsertUpdateTitleInModeReview" xml:space="preserve">
+    <value>این فرم فقط برای نمایش  اطلاعات می باشد</value>
+  </data>
+  <data name="FormInsertUpdateTitleModeNew" xml:space="preserve">
+    <value> ثبت مشتری جدید</value>
+  </data>
+  <data name="FormInsertUpdateTitleModeUpdate" xml:space="preserve">
+    <value> ویرایش مشتری </value>
+  </data>
+  <data name="FormPrintCustomerTitle" xml:space="preserve">
+    <value>فرم چاپ</value>
+  </data>
+  <data name="FormTitleSetAddress" xml:space="preserve">
+    <value>افزودن آدرس </value>
+  </data>
+  <data name="FormTitleSetPhone" xml:space="preserve">
+    <value>افزودن شماره تلفن </value>
+  </data>
+  <data name="InsertedContact" xml:space="preserve">
+    <value>اطلاعات فرد با موفقیت ثبت گردید.</value>
+  </data>
+  <data name="NoEnterContactCodeToPrint" xml:space="preserve">
+    <value>برای چاپ یک کد مخاطب وارد کنید
+ در غیر این صورت ابتدا از جدول در فرم قبل یک مخاطب را انتخاب کرده
+ سپس دکمه چاپ را فشار دهید  کنید </value>
+  </data>
+  <data name="notExistContact" xml:space="preserve">
+    <value>مخاطب وجود ندارد</value>
+  </data>
+  <data name="NothingEnterInformation" xml:space="preserve">
+    <value>اطلاعات را به درستی وارد کنید </value>
+  </data>
+  <data name="PhonePatternIncorrect" xml:space="preserve">
+    <value>تلفن وارد شد صحیح نمی باشد  </value>
+  </data>
+  <data name="SearchContact" xml:space="preserve">
+    <value>برای جستجو حداقل یکی از مواد مشخص شده را وارد کنید</value>
+  </data>
+  <data name="TheNationalCodeIsInCorrect" xml:space="preserve">
+    <value>کد ملی وارد شده صیح نمی باشد </value>
+  </data>
+  <data name="UpdatedContact" xml:space="preserve">
+    <value>اطلاعات مشتری با موفقیت بروز رسانی شد </value>
+  </data>
+  <data name="TitileMessageBoxNullControls" xml:space="preserve">
+    <value>فیلد خالی </value>
+  </data>
+  <data name="AlertDeleteCustomer" xml:space="preserve">
+    <value>هشدار: با حذف مشتری تمامی حواله و رسید صادره حذف خواهد شد </value>
+  </data>
+  <data name="NoDeleteCustomer" xml:space="preserve">
+    <value>شما  به دلیل  وجود معامله برای این مشتری در سیستم اجازه حذف آن را ندارید </value>
+  </data>
+</root>
